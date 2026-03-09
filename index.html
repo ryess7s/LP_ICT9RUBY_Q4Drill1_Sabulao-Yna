@@ -65,7 +65,7 @@ input{
 
         var grade = ""
         if(score>=500){
-            electricity = "Very High Consuption";
+            electricity = "A";
         }
 
         else if(score>=300){
@@ -77,25 +77,33 @@ input{
         }
 
         else if(score>=100){
-            grade="C";
+            grade="D";
         }
 
-        else if(score>=200){
-            grade="C";
+        else if(score>=0){
+            grade="E";
         }
 
         var remark = "";
         switch(grade){
             case "A":
-            remark="Excellent";
+            remark="Very High Consumption";
             break;
 
             case "B":
-            remark="Above Average";
+            remark="High Consumption";
             break;
 
             case "C":
-            remark="Mid";
+            remark="Average Consumption";
+            break;
+
+            case "D":
+            remark="Low Consumption";
+            break;
+
+            case "E":
+            remark="Lifeline Consumption";
             break;
 
             default:
@@ -113,6 +121,7 @@ input{
     
 </body>
 </html>
+
 
 
 
