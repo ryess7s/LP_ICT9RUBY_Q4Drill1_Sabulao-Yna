@@ -5,38 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRILL</title>
 
-    <style>
-        body{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-align: center;
-            margin-top: 80px;
-            background-color: antiquewhite;           
-        }
+         <style>
+body{background-color: rgb(253, 211, 74);
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif;}
 
-        .container{
-            background-color: bisque;
-            width: 300px;
-            margin: auto;
-            border: 1px solid #ccc;
-        }
+.container{background: white;
+padding: 20px;
+width: 500px;
+margin: auto;
+}
 
-        input{
-            padding: 6px;
-            width: 80%;
-            margin-bottom: 10px;
-        }
+input{
+    padding: 6px;
+    width: 80%;
+    margin-bottom: 10px;
+}
 
-        button{
-            padding: 8px 15px;
-        }
-           
-        .output{
-            margin-top: 10px;
-            text-align: left;
-
-        }
-        
-    </style>
+.output{
+    margin-top: 15px;
+    text-align: left;
+}
+      </style>
 
 </head>
 <body>
@@ -53,8 +44,8 @@
 
     <div class="output">
 
-    <p id="status"> </p>
-    <p id="grade"> </p>
+    <p id="consumption"> </p>
+    <p id="electricity"> </p>
 
     </div>
 
@@ -70,31 +61,31 @@
         }
 
         score = Number(score);
-        var status = "";   
+        var consumption = "";   
 
-        var grade = ""
+        var electricity = ""
         if(score>=500){
-            grade = "A";
+            electricity = "A";
         }
 
         else if(score>=300){
-            grade="B";
+            electricity="B";
         }
 
         else if(score>=200){
-            grade="C";
+            electricity="C";
         }
 
         else if(score>=100){
-            grade="C";
+            electricity="C";
         }
 
         else if(score>=200){
-            grade="C";
+            electricity="C";
         }
 
         var remark = "";
-        switch(grade){
+        switch(electricity){
             case "A":
             remark="Excellent";
             break;
@@ -122,3 +113,4 @@
     
 </body>
 </html>
+
