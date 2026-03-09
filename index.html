@@ -36,16 +36,16 @@ input{
 
     <h2> ELECTRICITY CONSUMPTION CLASSIFIER</h2>
 
-    <input type="number" id="score" placeholder="Please enter kWh per hour">
+    <input type="number" id="score" placeholder="Enter kWh usage">
 
     <br>
 
-    <button onclick="evaluateScore()"> CONSUMPTION CLASSIFICATION</button>
+    <button onclick="evaluateScore()"> EVALUATE </button>
 
     <div class="output">
 
-    <p id="consumption"> </p>
-    <p id="electricity"> </p>
+    <p id="status"> </p>
+    <p id="grade"> </p>
 
     </div>
 
@@ -61,31 +61,31 @@ input{
         }
 
         score = Number(score);
-        var consumption = "";   
+        var status = "";   
 
-        var electricity = ""
+        var grade = ""
         if(score>=500){
-            electricity = "A";
+            grade = "A";
         }
 
         else if(score>=300){
-            electricity="B";
+            grade="B";
         }
 
         else if(score>=200){
-            electricity="C";
+            grade="C";
         }
 
         else if(score>=100){
-            electricity="C";
+            grade="C";
         }
 
         else if(score>=200){
-            electricity="C";
+            grade="C";
         }
 
         var remark = "";
-        switch(electricity){
+        switch(grade){
             case "A":
             remark="Excellent";
             break;
